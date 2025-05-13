@@ -20,3 +20,9 @@ jobs:
 
       - name: Afficher le secret (masqué automatiquement)
         run: echo "${{ secrets.MY_SECRET }}"
+
+      - name: Créer un fichier hello.txt avec Bash
+        run: echo "Hello world" > hello.txt
+
+      - name: Lire le contenu de hello.txt
+        run: cat hello.txt
